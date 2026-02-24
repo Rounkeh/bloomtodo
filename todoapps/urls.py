@@ -4,8 +4,17 @@ urlpatterns = [
     
     path('create-todo/',views.createRetrieveView.as_view()),
     path('get-all-todo/',views.createRetrieveView.as_view()),
+    path('get-todo/<str:id>/',views.GetUpdateDeleteView.as_view()),
+    path('update-todo/<str:id>/',views.GetUpdateDeleteView.as_view()),
+    path('delete-todo/<str:id>/',views.GetUpdateDeleteView.as_view()),
+]
+
+
+
+
+
+
     # path('get-single-todo/<str:id>/',views.getUpdateDeleteview.as_view()),
     # path('update-todo/<str:id>/',views.getUpdateDeleteview.as_view()),
     # path('delete-todo/<str:id>/',views.getUpdateDeleteview.as_view())
-]
 
